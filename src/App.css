@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+
+.app {
+  background: rgb(13, 13, 13);
+  background: linear-gradient(
+    90deg,
+    rgba(13, 13, 13, 1) 0%,
+    rgba(26, 12, 55, 1) 50%,
+    rgba(40, 30, 73, 1) 100%
+  );
+ 
+}
+
+.header {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* From Uiverse.io by omriluz */ 
+.input {
+  color: #fff;
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0%);
+  transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input + .input-border {
+  transform: scaleX(100%);
+}
+
+.form-control {
+  position: relative;
+  --width-of-input: 300px;
+}
+
+.input-alt {
+  font-size: 1.2rem;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-border-alt {
+  height: 3px;
+  background: linear-gradient(90deg, #ff6464 0%, #ffbf59 50%, #47c9ff 100%);
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.input-alt + .input-border-alt {
+  transform: scaleX(100%);
+}
+
+/* From Uiverse.io by KeylaSUE */ 
+.progress-loader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.progress-loader {
+  width: 343px;
+  background: rgba(255, 255, 255, 0.2);
+  height: 5px;
+  border-radius: 7px;
+}
+
+.progress {
+  content: "";
+  width: 1px;
+  height: 5px;
+  border-radius: 7px;
+  background: rgb(144, 75, 246);
+  transition: 0.5s;
+  animation: loading1274 2s ease infinite;
+}
+
+@keyframes loading1274 {
+  0% {
+    width: 0%;
+  }
+
+  10% {
+    width: 10%;
+  }
+
+  50% {
+    width: 40%;
+  }
+
+  60% {
+    width: 60%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+
+
